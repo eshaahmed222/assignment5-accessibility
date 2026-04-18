@@ -1,39 +1,50 @@
 /* || General setup */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 html {
   font-size: 10px;
-  background-color: #dfe6ee;
+  background-color: #dde;
 }
 
 body {
   width: 80%;
   min-width: 1024px;
   margin: 0 auto;
-  background-color: #ffffff;
-  color: #222222;
+  background-color: #ffffff !important;
+  color: #222222 !important;
 }
 
 /* || typography */
 
-h1, h2, h3 {
-  font-family: 'Sonsie One', cursive;
+h1,
+h2,
+h3 {
+  font-family: "Sonsie One", cursive;
   color: #2a2a2a;
 }
 
-p, input, li, table, label, button {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #222222;
+p,
+input,
+li,
+table,
+label,
+button,
+td,
+th,
+caption {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #222222 !important;
 }
 
 h1 {
   font-size: 4rem;
   text-align: center;
-  color: white;
+  color: white !important;
   text-shadow: 2px 2px 10px black;
 }
 
@@ -46,7 +57,9 @@ h3 {
   font-size: 2.2rem;
 }
 
-p, li, table {
+p,
+li,
+table {
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -54,14 +67,14 @@ p, li, table {
 /* || header layout */
 
 .header {
-  background-color: #2f6f3e;
+  background-color: #2f6f3e !important;
   padding: 20px;
   margin-bottom: 10px;
 }
 
 nav {
   height: 50px;
-  background-color: #b30086;
+  background-color: #b30086 !important;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -85,7 +98,7 @@ nav a {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 
 nav a:hover {
@@ -112,39 +125,48 @@ nav .search {
 
 .search input[type="search"] {
   flex: 3;
+  background-color: #ffffff !important;
+  color: #222222 !important;
 }
 
 .search input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
-  background: #333;
+  background: #333 !important;
   border: 0;
-  color: white;
+  color: white !important;
 }
 
 /* || main layout */
 
 main {
   display: flex;
+  background-color: #ffffff !important;
 }
 
 article {
   flex: 5;
   margin-right: 10px;
   padding: 10px 30px;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
+  color: #222222 !important;
 }
 
 .secondary {
   flex: 2;
-  background-color: #2f6f3e;
-  color: white;
+  background-color: #2f6f3e !important;
+  color: white !important;
   padding: 10px 30px;
 }
 
-/* 🔥 FIX FOR YOUR ISSUE (links not blue anymore) */
+.secondary h2,
+.secondary li,
+.secondary p {
+  color: white !important;
+}
+
 .secondary a {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
@@ -152,35 +174,38 @@ article {
   text-decoration: underline;
 }
 
-.secondary h2,
-.secondary li {
-  color: white;
-}
-
 footer {
   margin-top: 10px;
-  background-color: #2f6f3e;
-  color: white;
+  background-color: #2f6f3e !important;
+  color: white !important;
   padding: 10px 30px;
+}
+
+footer p {
+  color: white !important;
 }
 
 /* Table styling */
 
 table {
   width: 100%;
-  background-color: #dde;
+  background-color: #dde !important;
   border-collapse: collapse;
+  color: #222222 !important;
 }
 
 caption {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 10px;
+  color: #222222 !important;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: center;
+  color: #222222 !important;
 }
 
 th[scope="col"] {
@@ -192,12 +217,13 @@ th[scope="row"] {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #def;
+  background-color: #def !important;
 }
 
 /* styling content images and audio */
 
-img, audio {
+img,
+audio {
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -210,7 +236,7 @@ audio {
 /* Comments styling */
 
 .comments {
-  background-color: #def;
+  background-color: #def !important;
   padding: 10px;
 }
 
@@ -221,6 +247,9 @@ audio {
   display: block;
   margin: 0 auto;
   padding: 0.4rem 0.8rem;
+  background: #333 !important;
+  border: 0;
+  color: white !important;
 }
 
 .comment-form {
@@ -236,11 +265,14 @@ audio {
   align-self: center;
   flex: 2;
   text-align: right;
+  color: #222222 !important;
 }
 
 .comment-form input {
   margin-left: 1rem;
   flex: 6;
+  background-color: #ffffff !important;
+  color: #222222 !important;
 }
 
 .comment-form input,
@@ -250,26 +282,13 @@ audio {
   line-height: 32px;
 }
 
-.main-content {
-  flex: 5;
-}
-
-.main-content article,
-.main-content section {
-  margin-bottom: 2rem;
-}
-
-.comment-form input[type="submit"],
-.show-hide {
-  background: #333;
-  border: 0;
-  color: white;
-}
-
 .comment-form input[type="submit"] {
   width: 30%;
   display: block;
   margin: 0 auto;
+  background: #333 !important;
+  border: 0;
+  color: white !important;
 }
 
 .comment-container {
