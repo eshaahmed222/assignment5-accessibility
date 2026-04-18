@@ -19,16 +19,16 @@ Description: Accessibility improved version of the MDN troubleshooting page.
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <h1>Welcome to our wildlife website</h1>
   </header>
 
   <nav aria-label="Main navigation">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Our team</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Blog</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#bears">Our team</a></li>
+      <li><a href="#habitats">Projects</a></li>
+      <li><a href="#author">Blog</a></li>
     </ul>
 
     <form class="search">
@@ -45,7 +45,7 @@ Description: Accessibility improved version of the MDN troubleshooting page.
 
   <main>
     <article>
-      <h2>The trouble with Bears</h2>
+      <h2 id="bears">The trouble with Bears</h2>
 
       <p>By Evan Wild</p>
 
@@ -107,7 +107,7 @@ Description: Accessibility improved version of the MDN troubleshooting page.
         </tbody>
       </table>
 
-      <h3>Habitats and Eating habits</h3>
+      <h3 id="habitats">Habitats and Eating habits</h3>
 
       <p>
         Wild bears eat a variety of meat, fish, fruit, nuts, and other naturally growing
@@ -166,7 +166,7 @@ Description: Accessibility improved version of the MDN troubleshooting page.
         </p>
       </section>
 
-      <aside>
+      <aside id="author">
         <h3>About the author</h3>
 
         <p>
@@ -235,11 +235,11 @@ Description: Accessibility improved version of the MDN troubleshooting page.
     <section class="secondary">
       <h2>Related</h2>
       <ul>
-        <li><a href="#">The trouble with Bees</a></li>
-        <li><a href="#">The trouble with Otters</a></li>
-        <li><a href="#">The trouble with Penguins</a></li>
-        <li><a href="#">The trouble with Octopi</a></li>
-        <li><a href="#">The trouble with Lemurs</a></li>
+        <li><a href="#bears">The trouble with Bees</a></li>
+        <li><a href="#habitats">The trouble with Otters</a></li>
+        <li><a href="#author">The trouble with Penguins</a></li>
+        <li><a href="#bears">The trouble with Octopi</a></li>
+        <li><a href="#habitats">The trouble with Lemurs</a></li>
       </ul>
     </section>
   </main>
